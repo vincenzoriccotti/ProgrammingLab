@@ -5,3 +5,4 @@ def contalettera(parola, lettera):
             count+=1
 
     return count
+print(contalettera("Vincenzo", "n"))
