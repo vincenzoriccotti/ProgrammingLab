@@ -4,8 +4,6 @@ class CsvFile:
         self.name_file=name_file
 
     def get_data(self):
-        
-        
         lista=[]
         try:
             with open(self.name_file, 'r') as file:
@@ -13,15 +11,11 @@ class CsvFile:
                     elements = line.strip().split(',')
                     lista.append(elements)
                 return lista
-            
         except FileNotFoundError:
         
             print("Stai cercando di aprire un file che non esiste")
             
-          
-         
-        
-        
+
 
 class NumericalCSVFile(CsvFile):
     
@@ -31,10 +25,8 @@ class NumericalCSVFile(CsvFile):
     def get_data(self):
         data=super().get_data()
         data_float=[]
-        
-        
+
         for row in data[1:]:
-        
             new_row=[row[0]]
             for element in row[1:]:
                 try:
