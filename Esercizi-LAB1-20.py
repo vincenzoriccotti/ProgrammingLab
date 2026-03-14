@@ -38,11 +38,6 @@ class NumericalCSVFile(CsvFile):
             
         return data_float
         
-          
-    
-
-
-
 
 
 
