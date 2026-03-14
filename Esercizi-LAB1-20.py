@@ -41,7 +41,7 @@ class NumericalCSVFile(CsvFile):
 
 
 
-file = NumericalCSVFile("dati.csv")
+file = NumericalCSVFile("/Data/dati.csv")
 #file1=CsvFile("dato.csv")
 print(file.get_data())
 #print(file1.get_data())
