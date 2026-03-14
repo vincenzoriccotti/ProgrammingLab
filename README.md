@@ -1,2 +1,2 @@
 # ProgrammingLab
-Repo for the programming Lab course
+Repo for the programming Lab course - Vincenzo Riccotti
