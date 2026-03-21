@@ -15,7 +15,7 @@ class CsvFile:
                     lista.append(elements)     
         except FileNotFoundError:
     
-            print("Stai cercando di aprire un file che non esiste")
+            raise("Stai cercando di aprire un file che non esiste")
 
         if not isinstance(start, int) and not isinstance(end, int):
             raise TypeError("I valori di start e end devono essere interi")
@@ -38,7 +38,7 @@ class CsvFile:
 class NumericalCSVFile(CsvFile):
     
     def __init__(self,name_file):
-        super().__init__(name_file)
+        super().__init__(name_file) #si può anche omettere
     
     def get_data(self):
         data=super().get_data()
@@ -60,7 +60,7 @@ class NumericalCSVFile(CsvFile):
         
         
 
-file = NumericalCSVFile("dati.csv")
-file1=CsvFile("dati.csv")
+file = NumericalCSVFile("shampoo_sales.cvs")
+file1=CsvFile("shampoo_sales.csv")
 #print(file.get_data())
 print(file1.get_data(3,12))
