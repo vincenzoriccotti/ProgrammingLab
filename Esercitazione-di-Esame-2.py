@@ -18,7 +18,7 @@ class CSVTimeSeriesFile:
                      if prev_time_stamp > time_stamp:
                          raise ExamException("Valori non ordinati")
                         
-                 
+                 prev_time_stamp=time_stamp
                  lista.append(row)
                 return lista
         except:
