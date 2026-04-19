@@ -9,7 +9,7 @@ luna
 mare
 montagna
 cielo
-vento
+ventoC
 pioggia
 neve
 fiume
