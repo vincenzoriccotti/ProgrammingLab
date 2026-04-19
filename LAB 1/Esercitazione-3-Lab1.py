@@ -26,6 +26,7 @@ class CSVTimeSeriesFile:
             raise ExamException("Impossibile aprire il file")
 
 def compute_variations(time_series,first_year,last_year):
+    
     diz={}
     for element in time_series:
         anno=int(element[0].split('-')[0])
